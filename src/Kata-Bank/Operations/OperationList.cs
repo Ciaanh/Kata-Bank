@@ -9,9 +9,10 @@ namespace Kata_Bank.Operations
     {
         private List<Operation> _operations = new List<Operation>();
 
-        public void Add(Operation operation)
+        public List<Operation> Add(Operation operation)
         {
             _operations.Add(operation);
+            return _operations;
         }
 
         public double ComputeBalance()
